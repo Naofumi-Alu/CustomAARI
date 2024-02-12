@@ -1,11 +1,14 @@
 {
-  "name": "ProjectUsedNode",
+  "name": "CUSTOMAARI",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "dev": "nodemon Source",
-    "start": "node Source"
+    "dev": "nodemon Source/index.js",
+    "start": "node Source/index.js"
   },
   "keywords": [],
   "author": "Alu-Naofumi-J-Iwatani",

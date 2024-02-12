@@ -2,13 +2,13 @@
   "name": "CUSTOMAARI",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "18.x"
-  },
+  "main": "Source/index.js",
   "scripts": {
-    "dev": "nodemon Source/index.js",
-    "start": "node Source/index.js"
+    "start": "node Source/index.js",
+    "dev": "nodemon Source/index.js"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "keywords": [],
   "author": "Alu-Naofumi-J-Iwatani",

@@ -3,7 +3,7 @@ const express = require('express');
 const app= express();
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const portEnv = process.env.PORT || 3000;
+const portEnv = process.env.PORT; //|| 3000;
 
 //Settings
 app.set('port',portEnv);

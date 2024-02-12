@@ -1,0 +1,52 @@
+
+<%- include ('partials/head.html') %>
+
+    <body>
+
+        
+            <%- include ('partials/navigation.html') %>
+            <div class="container">
+                <h2 class="form-heading">Registro de Cliente</h2>
+                <form action="/submit" method="post">
+                    <div class="form-group">
+                        <label for="firstName">Primer Nombre</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="secondName">Segundo Nombre</label>
+                        <input type="text" class="form-control" id="secondName" name="secondName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Teléfono Móvil</label>
+                        <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">Plan de Netflix</label>
+                        <select class="form-control" id="plan" name="plan">
+                            <option>Básico</option>
+                            <option>Estándar</option>
+                            <option>Premium</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="subscriptionType">Tipo de Suscripción</label>
+                        <select class="form-control" id="subscriptionType" name="subscriptionType">
+                            <option>Mensual</option>
+                            <option>Anual</option>
+                        </select>
+                    </div>
+                    <br><br/>
+                    <button  type="submit" class="btn btn-primary">Registrar</button>
+                </form>
+            </div>
+
+                <%- include ('partials/footer.html') %>
+          

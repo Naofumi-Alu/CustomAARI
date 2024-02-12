@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon Source",
+    "dev": "nodemon Source",
     "start": "node Source"
   },
   "keywords": [],

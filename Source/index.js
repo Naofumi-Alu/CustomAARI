@@ -3,10 +3,10 @@ const express = require('express');
 const app= express();
 const path = require('path');
 const cookieParser = require('cookie-parser');
-
+const portEnv = process.env.PORT || 3000;
 
 //Settings
-app.set('port',5000);
+app.set('port',portEnv);
 let port = app.get('port');
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'Views'));

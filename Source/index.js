@@ -4,6 +4,7 @@ const app= express();
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const portEnv = process.env.PORT || 3000;
+const cors = require('cors');
 
 //Settings
 app.set('port',portEnv);
@@ -22,6 +23,16 @@ app.use(require('./Routes/api'));
 app.use(require('./Routes/index'));
 
 
+// Enable All CORS Requests
+app.use(cors());
+
+// Set the Headers that Autoation ANywhere bot can access to my API
+
+app.use((req,res,next)=>{
+    res.header('Access-Control-Allow-Origin','*');
+    res.header('Access-Control-Allow-Headers','Origin, X-Requested-With, Content-Type, Accept');
+    next();
+});
 
 
 //Statci Files
